@@ -1,4 +1,4 @@
-# READEME
+# README
 
 ##将chrome书签整理成markdown格式。
 
