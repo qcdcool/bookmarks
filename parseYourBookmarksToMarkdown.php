@@ -12,9 +12,10 @@
 
 // chrome书签文件根目录（本示例仅以Mac OS为例，其他系统chrome书签文件路径请自行Google）
 
-const BOOKMARK_ROOT_PATH = '/Users/qcdcool/Library/Application Support/Google/Chrome/Default/';
+const BOOKMARK_ROOT_PATH = '/Users/{User}/Library/Application Support/Google/Chrome/Default/';
 
 $bookmarks_data = parseBookmark();
+//$bookmarks_data['roots']['bookmark_bar']['children'] 为默认的书签
 if (isset($bookmarks_data['roots']['bookmark_bar']['children'])) {
 	saveToMarkdown($bookmarks_data['roots']['bookmark_bar']['children']);
 	echo "save markdown file success!\n";
